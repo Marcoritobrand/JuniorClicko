@@ -1,0 +1,14 @@
+.tabladiv {
+    padding: 3%;
+}
+
+table {
+    border-collapse: separate !important;
+    border-spacing: 10px 5px !important;
+}
+
+h1 {
+    margin-left: 54px !important;
+}
+
+.resultmail {}
