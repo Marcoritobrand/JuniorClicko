@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 .tabladiv {
-    padding: 3%;
+    padding: 3% !important;
 }
 
 table {
@@ -7,8 +8,58 @@ table {
     border-spacing: 10px 5px !important;
 }
 
-h1 {
-    margin-left: 54px !important;
+.txttitulo {
+    text-align: center;
+    color: #012637;
 }
 
-.resultmail {}
+.txtcrud {
+    color: #018ECE;
+    font-size: 20px;
+    font-family: cursive;
+    text-align: center;
+}
+
+.txtcreated {
+    color: #00273D;
+    font-size: 13px;
+    font-family: cursive;
+    text-align: center;
+}
+
+.divcrud {
+    margin-top: 55px !important;
+    text-align: center;
+}
+
+.divimgtxt {
+    margin-top: 55px;
+}
+
+.margentop {
+    margin-top: 13px !important;
+}
+
+.divcentro {
+    margin: 1rem;
+    padding: 1rem;
+    border: 2px solid #ccc;
+    /* IMPORTANTE */
+    text-align: center;
+}
+
+.txtqueescrud {
+    color: #012637;
+    font-size: 37px;
+    font-weight: bold;
+    font-family: initial;
+    text-align: center;
+}
+
+.fontfamilygoogle {
+    font-family: 'Anton', sans-serif !important;
+}
+
+.divcruddef:hover {
+    background-color: #0290CF !important;
+}
