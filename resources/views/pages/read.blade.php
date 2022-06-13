@@ -113,17 +113,7 @@
     </div>
     <div>
         <h2>CONTADOR CORREOS:</h2>
-
-
-        <p>
-            @php
-
-
-            @endphp
-        </p>
-
         <table class="resultmail">
-
                 <tr>
                     <td> @php
                         echo implode(" <br> ",$gmailtotal);
@@ -134,11 +124,9 @@
                         echo implode(" <br> ",$valors);
                     @endphp</td>
                 </tr>
-
         </table>
-
-
     </div>
+
 
 
 </body>
