@@ -28,7 +28,7 @@ class DatabaseSeeder extends Seeder
                 'password'=> '$2y$10$zVnli1I4M7pj7M9GgvEENOXQf7nOPicYWxEarlD8KWGe/6B4Ppveq'
             ]);
         }
-        for ($i=23; $i < 24; $i++) {
+        for ($i=0; $i < 1; $i++) {
             $numerorand = mt_rand(0,8);
             DB::table('users')->insert([
                 'name' => 'admin',

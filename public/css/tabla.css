@@ -1,11 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 .tabladiv {
-    padding: 3% !important;
+    padding: 1% !important;
 }
 
 table {
     border-collapse: separate !important;
     border-spacing: 10px 5px !important;
+}
+
+.divformcreate {
+    display: flex;
+    justify-content: center;
+}
+
+.formcreate {
+    width: 30%;
+}
+
+.formcreate button {
+    margin-top: 10px;
+}
+
+.formcreate label {
+    margin-top: 10px;
+}
+
+.formcreate a {
+    margin-top: 10px;
 }
 
 .txttitulo {
@@ -25,6 +46,10 @@ table {
     font-size: 13px;
     font-family: cursive;
     text-align: center;
+}
+
+.margenesderecha {
+    margin-right: 10px;
 }
 
 .divcrud {
@@ -58,8 +83,12 @@ table {
 
 .fontfamilygoogle {
     font-family: 'Anton', sans-serif !important;
+    color: black !important;
+    text-decoration: none !important;
 }
 
 .divcruddef:hover {
     background-color: #0290CF !important;
+    color: white !important;
+    text-decoration: none !important;
 }

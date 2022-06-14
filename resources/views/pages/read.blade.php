@@ -63,56 +63,70 @@
         </div>
     </nav>
 
-
-    <h1>READ USER</h1>
     <hr>
-    <div class="tabladiv">
-        <table class="default">
-            <thead>
-                <th> ID </th>
-                <th> NOMBRE </th>
-                <th> EMAIL </th>
-            </thead>
+    <h1 class="text-center ">LIST USERS</h1>
+    <hr>
 
-            <tbody>
-                @foreach ($products as $prod)
+    <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">NOMBRE</th>
+            <th scope="col">EMAIL</th>
+            <th scope="col"></th>
+            <th scope="col">OPTIONS</th>
+          </tr>
+        </thead>
+        <tbody>
+            @foreach ($products as $prod)
                 <tr>
                     <td>{{ $prod->id}}</td>
                     <td>{{ $prod->name}}</td>
                     <td>{{ $prod->email}}</td>
                     <td></td>
-                    <td>
-                        <form action="{{ route('user.create') }}" method="GET">
-                            @csrf @method('PATCH')
-                            <button type="submit">
-                                CREATE
-                            </button>
-                        </form>
-                    </td>
-                    <td>
+                    <td class="d-flex ">
                         <form action="{{ route('editform',$prod->id )}}" method="GET">
                             @csrf @method('PATCH')
-                            <button type="submit">
+                            <button class="margenesderecha" type="submit">
                                 EDIT
                             </button>
                         </form>
-                    </td>
-                    <td>
+                        <br>
                         <form action="{{ route('delete',$prod->id )}}" method="POST">
                             @csrf @method('DELETE')
-                            <button type="submit"  onclick="return confirm('¿borrar?');">
+                            <button type="submit"  onclick="return confirm('¿ESTAS SEGURO QUE DESEAS BORRAR AL USUARIO?');">
                                 DELETE
                             </button>
                         </form>
                     </td>
-
                 </tr>
-                @endforeach
-            </tbody>
-        </table>
+            @endforeach
+        </tbody>
+    </table>
+
+
+    <div class="centrodiv">
+        <div class="tabladiv">
+            <table class="default">
+                <thead>
+                    <th>  </th>
+                    <th>  </th>
+                    <th>  </th>
+                </thead>
+
+                <tbody>
+
+
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
     </div>
+    <hr>
     <div>
-        <h2>CONTADOR CORREOS:</h2>
+        <h2 class="text-center">CONTADOR CORREOS:</h2>
+        <hr>
         <table class="resultmail">
                 <tr>
                     <td> @php
@@ -125,8 +139,9 @@
                     @endphp</td>
                 </tr>
         </table>
-    </div>
 
+    </div>
+    <hr>
 
 
 </body>

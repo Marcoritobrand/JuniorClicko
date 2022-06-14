@@ -18,6 +18,7 @@ class UserController extends Controller
         return back();
 
     }
+
     public function read(){
         // DEVUELVA TODO
         $sql = 'SELECT * FROM users';
@@ -44,6 +45,7 @@ class UserController extends Controller
                 array_push($gmailtotal, $info);
 
             }
+
             logger($todo);
             logger($gmailtotal);
         }
@@ -51,8 +53,14 @@ class UserController extends Controller
 
 
 
+
+
+
+
         return view('pages/read', compact('products','array','consulta','contador','variable','gmailtotal','valors'));
     }
+
+
     public function delete($id){
         Users::destroy($id);
         return back();
